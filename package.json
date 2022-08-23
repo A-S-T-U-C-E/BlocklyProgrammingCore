@@ -14,7 +14,7 @@
     "type": "git",
     "url": "git+https://github.com/A-S-T-U-C-E/BlocklyProgrammingCore.git"
   },
-  "author": "Preet P. Vadaliya",
+  "author": "Preet P. Vadaliya, Sébastien Canet",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/A-S-T-U-C-E/BlocklyProgrammingCore/issues"
@@ -23,6 +23,7 @@
   "devDependencies": {
     "blockly": "^8.0.5",
     "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
     "eslint": "^8.22.0",
     "eslint-config-google": "^0.14.0",
     "webpack": "^5.74.0",
