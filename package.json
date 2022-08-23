@@ -1,0 +1,32 @@
+{
+  "name": "blocklyprogrammingcore",
+  "version": "1.0.0",
+  "description": "Blockly Programming Core",
+  "main": "app.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack",
+    "update": "npm update",
+    "audit": "npm audit fix",
+    "lint": "eslint ./src --ext .js --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/A-S-T-U-C-E/BlocklyProgrammingCore.git"
+  },
+  "author": "Preet P. Vadaliya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/A-S-T-U-C-E/BlocklyProgrammingCore/issues"
+  },
+  "homepage": "https://github.com/A-S-T-U-C-E/BlocklyProgrammingCore#readme",
+  "devDependencies": {
+    "blockly": "^8.0.5",
+    "copy-webpack-plugin": "^11.0.0",
+    "eslint": "^8.22.0",
+    "eslint-config-google": "^0.14.0",
+    "webpack": "^5.74.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.10.0"
+  }
+}
