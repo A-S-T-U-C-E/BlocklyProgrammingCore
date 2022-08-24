@@ -2,58 +2,47 @@
 <html>
 
 <head>
-    <title>Blockly - Loading with Webpack</title>
-    <style>
-        html,
-        body {
-            height: 100%;
-            margin: 0;
-        }
-        
-        #blocklyDiv {
-            height: 100%;
-        }
-        
-        #blocklyButton {
-            float: right;
-        }
-    </style>
+    <title>Blockly Programming Core</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles.css">
+    <script type='text/javascript' src='./index.js'></script>
 </head>
 
 <body>
-    <nav>
-        <button id="blocklyButton1">Convert Code</button>
-        <button id="blocklyButton2">Convert Lang</button>
-    </nav>
-    <div id='blocklyDiv'>
-    </div>
-
-    <script type='text/javascript' src='./index.js'></script>
-
-    <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-        <block type="controls_ifelse"></block>
-        <block type="logic_compare"></block>
-        <block type="logic_operation"></block>
-        <block type="controls_repeat_ext">
-            <value name="TIMES">
-                <shadow type="math_number">
-                    <field name="NUM">10</field>
-                </shadow>
-            </value>
-        </block>
-        <block type="logic_operation"></block>
-        <block type="logic_negate"></block>
-        <block type="logic_boolean"></block>
-        <block type="logic_null" disabled="true"></block>
-        <block type="logic_ternary"></block>
-        <block type="text_charAt">
-            <value name="VALUE">
-                <block type="variables_get">
-                    <field name="VAR">text</field>
-                </block>
-            </value>
-        </block>
-    </xml>
+    <flex class="content_wrapper" style="height: 100%;">
+        <div class="divTableCell">
+            <button id="blocklyButton1">Convert Code</button>
+        </div>
+        <div class="divTableCell">
+            <button id="blocklyButton2">Convert Lang</button>
+        </div>
+        <flex class="wrapper_up" style="flex: 1;">
+            <flex-item style="flex: 1;">
+                <div id="content_area" style="height: 100%; width: 100%"></div>
+                <div id="content_blocks" style="position: absolute"></div>
+            </flex-item>
+            <flex-resizer></flex-resizer>
+            <flex-item style="flex-basis: 41px; background-color: aqua;">
+                <div id="content_code" style="flex: 1;"></div>
+            </flex-item>
+        </flex>
+        <flex-resizer></flex-resizer>
+        <flex class="wrapper_up" style="flex-basis: 10px;">
+            <flex-item style="flex: 1; background: pink;">Flex 3</flex-item>
+        </flex>
+    </flex>
 </body>
+
+<xml id="toolbox" style="display: none">
+    <block type="controls_if"></block>
+    <block type="controls_repeat_ext"></block>
+    <block type="logic_compare"></block>
+    <block type="math_number"></block>
+    <block type="math_arithmetic"></block>
+    <block type="text"></block>
+    <block type="text_print"></block>
+</xml>
 
 </html>

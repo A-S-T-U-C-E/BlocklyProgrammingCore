@@ -1,0 +1,39 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+#blocklyButton {
+    float: right;
+}
+
+flex {
+    display: flex;
+    overflow: hidden;
+}
+
+flex.wrapper_up {
+    flex-direction: row;
+}
+
+flex.content_wrapper {
+    flex-direction: column;
+}
+
+flex>flex-resizer {
+    flex: 0 0 10px;
+    background-color: #aaa;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+flex.wrapper_up>flex-resizer {
+    cursor: ew-resize;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='30'><path d='M2 0 v30 M5 0 v30 M8 0 v30' fill='none' stroke='black'/></svg>");
+}
+
+flex.content_wrapper>flex-resizer {
+    cursor: ns-resize;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='10'><path d='M0 2 h30 M0 5 h30 M0 8 h30' fill='none' stroke='black'/></svg>");
+}
